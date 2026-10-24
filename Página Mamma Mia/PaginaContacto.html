@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu viaje | Mamma Mia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CssContacto.css">
+    <script src="contacto.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <nav class="menu" aria-label="Navegación principal">
+            <a href="PaginaDestinos.html">Destinos</a>
+            <a href="PaginaActividades.html">Actividades</a>
+            <a href="PaginaAlojamiento.html">Alojamiento</a>
+            <a href="MammaMiaHTML.html" class="boton-viaje" aria-current="page">Inicio</a>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <section class="formulario-contenedor">
+            <h1>Completá el formulario</h1>
+
+            <form id="formulario-viaje">
+
+                <div class="grupo-campos">
+
+                    <div class="campo">
+                        <label for="nombre">Nombre completo</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Ej. María González"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="edad">Edad</label>
+                        <input
+                            type="number"
+                            id="edad"
+                            name="edad"
+                            placeholder="Tu edad"
+                            min="1"
+                            max="100"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefono">Número de teléfono</label>
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="Ej. 11 1234 5678"
+                            autocomplete="tel"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="correo">Correo electrónico</label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="Ej. nombre@correo.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="dias">Cantidad de días que viajás</label>
+                        <input
+                            type="number"
+                            id="dias"
+                            name="dias"
+                            placeholder="Ej. 10"
+                            min="1"
+                            max="365"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="pasajeros">Cantidad de pasajeros</label>
+                        <input
+                            type="number"
+                            id="pasajeros"
+                            name="pasajeros"
+                            placeholder="Ej. 4"
+                            min="1"
+                            max="100"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="destinos">Destinos que querés visitar</label>
+                        <textarea
+                            id="destinos"
+                            name="destinos"
+                            placeholder="Ej. Atenas, Santorini..."
+                            rows="2"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="campo">
+                        <label for="actividades">Actividades que querés realizar</label>
+                        <textarea
+                            id="actividades"
+                            name="actividades"
+                            placeholder="Ej. Playas, excursiones..."
+                            rows="2"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="campo">
+                        <label for="hospedaje">Posible hospedaje</label>
+                        <textarea
+                            id="hospedaje"
+                            name="hospedaje"
+                            placeholder="Ej. Hotel, departamento..."
+                            rows="2"
+                            required
+                        ></textarea>
+                    </div>
+
+                </div>
+
+                <div class="zona-envio">
+                    <p id="mensaje-formulario" role="status" aria-live="polite"></p>
+                    <button type="submit" class="boton-enviar">Enviar</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

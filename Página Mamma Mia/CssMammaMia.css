@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #176B87;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.encabezado {
+   position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 58px;
+    padding: 0 3.8%;
+    background-color: #E8D5B5;
+}
+
+.navegacion,
+.navegacion ul {
+    height: 100%;
+}
+
+.navegacion ul {
+     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5.2%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navegacion a {
+    color: #111111;
+    font-size: clamp(13px, 1.4vw, 18px);
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.navegacion a:hover {
+    color: #176B87;
+}
+
+.navegacion .boton-viaje,
+.boton-viaje {
+    display: inline-block;
+    min-width: clamp(100px, 12vw, 160px);
+    padding: 6px 16px;
+    border-radius: 40px;
+    background-color: #F4C95D;
+    color: #111111;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(13px, 1.4vw, 18px);
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-viaje:hover,
+.boton-contacto:hover,
+.boton-secundario:hover {
+    opacity: 0.85;
+}
+
+.menu-viaje {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    right: 6%;
+    top: 64px;
+    padding: 20px;
+    width: 240px;
+    background-color: #ffffff;
+    color: #222222;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px #00000025;
+    background-color: #E8D5B5;
+}
+
+.menu-viaje a {
+    display: block;
+    color: #176B87;
+    margin-top: 12px;
+    text-decoration: none;
+}
+
+.menu-viaje a:hover {
+    text-decoration: underline;
+}
+
+.menu-visible {
+    display: block;
+}
+
+main {
+    padding-top: 58px;
+}
+
+.portada,
+.seccion-contenido {
+    padding: 48px 7%;
+}
+
+.titulo-portada h1,
+.titulo-portada h2,
+.seccion-contenido h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 500;
+}
+
+.titulo-portada h1 {
+    font-size: 52px;
+    margin: 0 0 10px;
+}
+
+.titulo-portada h2 {
+    font-size: 42px;
+    margin: 0 0 38px;
+}
+
+.galeria-portada {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.galeria-portada img {
+    width: 48%;
+    height: 310px;
+    object-fit: cover;
+}
+
+.bienvenida {
+    text-align: center;
+    padding: 50px 0 25px;
+}
+
+.bienvenida h2,
+.seccion-contacto h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.bienvenida p,
+.seccion-contacto p {
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.frase {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 23px !important;
+}
+
+.boton-contacto,
+.boton-secundario {
+    display: inline-block;
+    background-color: #932453;
+    color: #ffffff;
+    border-radius: 28px;
+    padding: 13px 38px;
+    margin-top: 18px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.seccion-contenido h2 {
+    font-size: 42px;
+    margin-top: 0;
+    background-color: #E8D5B5;
+    color: #176B87;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.seccion-contenido > p {
+    max-width: 760px;
+    line-height: 1.8;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.tarjeta {
+    flex: 1;
+    min-width: 220px;
+    background-color: #ffffff;
+    color: #222222;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tarjeta h3,
+.alojamiento h3 {
+    color: #176B87;
+    font-size: 21px;
+}
+
+.tarjeta p,
+.alojamiento p {
+    line-height: 1.7;
+}
+
+.seccion-arena {
+    background-color: #E8D5B5;
+    color: #222222;
+}
+
+.seccion-arena h2 {
+    background-color: #176B87;
+    color: #E8D5B5;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.tarjeta-clara {
+    background-color: #ffffff;
+}
+
+.alojamiento {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 35px;
+    margin-top: 25px;
+}
+
+.alojamiento img {
+    width: 48%;
+    min-width: 260px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.alojamiento div {
+    flex: 1;
+    min-width: 230px;
+}
+
+.seccion-contacto {
+    text-align: center;
+    padding: 60px 7%;
+    background-color: #E8D5B5;
+    color: #222222;
+}
+
+.seccion-contacto h2 {
+    color: #176B87;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 25px 7%;
+    background-color: #104d62;
+    font-size: 14px;
+}
+
+footer a {
+    color: #F4C95D;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    .encabezado {
+       height: 52px;
+        padding: 0 3%;
+    }
+
+    main {
+        padding-top: 52px;
+    }
+
+    .navegacion ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navegacion a {
+        font-size: clamp(11px, 2.6vw, 15px);
+    }
+
+    .navegacion .boton-viaje,
+    .boton-viaje {
+        min-width: 0;
+        padding: 6px 12px;
+        font-size: clamp(11px, 2.6vw, 15px);
+    }
+
+    .menu-viaje {
+        right: 5%;
+        top: 58px;
+    }
+
+    .portada,
+    .seccion-contenido {
+        padding: 35px 6%;
+    }
+
+    .titulo-portada h1 {
+        font-size: 39px;
+    }
+
+    .titulo-portada h2 {
+        font-size: 29px;
+    }
+
+    .galeria-portada img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .bienvenida h2,
+    .seccion-contacto h2 {
+        font-size: 25px;
+    }
+
+    .bienvenida p,
+    .seccion-contacto p {
+        font-size: 16px;
+    }
+
+    .seccion-contenido h2 {
+        font-size: 34px;
+    }
+
+    .alojamiento img {
+        width: 100%;
+        min-width: 0;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+#destinos .boton-contacto,
+#actividades .boton-contacto {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}

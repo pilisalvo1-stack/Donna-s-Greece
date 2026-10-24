@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #176B87;
+    color: #111111;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.encabezado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 58px;
+    padding: 0 3.8%;
+    background-color: #E8D5B5;
+}
+
+.navegacion,
+.navegacion ul {
+    height: 100%;
+}
+
+.navegacion ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5.2%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navegacion a {
+    color: #111111;
+    font-size: clamp(13px, 1.4vw, 18px);
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.navegacion a:hover {
+    color: #176B87;
+}
+
+.navegacion .boton-viaje {
+    display: inline-block;
+    min-width: clamp(100px, 12vw, 160px);
+    padding: 6px 16px;
+    border-radius: 40px;
+    background-color: #F4C95D;
+    text-align: center;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 58px;
+}
+
+.seccion-destinos {
+    min-height: calc(100vh - 58px);
+    padding: 8.4vh 2%;
+    background-color: #176B87;
+}
+
+.tarjetas {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 2.5%;
+    width: 100%;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 31.7%;
+    min-width: 0;
+    min-height: 67.5vh;
+    padding: 2.2% 1.25% 2.5%;
+    border-radius: 40px;
+    background-color: #FFFBF1;
+    text-align: center;
+}
+
+.tarjeta img {
+    display: block;
+    width: 100%;
+    height: 35vh;
+    min-height: 190px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.tarjeta h2 {
+    margin: 20px 0 20px;
+    color: #176B87;
+    font-size: clamp(20px, 2vw, 31px);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.boton-mas {
+    display: block;
+    width: 62%;
+    margin-top: auto;
+    padding: 9px 12px;
+    border-radius: 40px;
+    background-color: #982453;
+    color: #ffffff;
+    font-size: clamp(17px, 1.8vw, 28px);
+    text-decoration: none;
+}
+
+.boton-mas:hover,
+.boton-contacto:hover {
+    background-color: #7D1C45;
+}
+
+.tu-viaje {
+    min-height: 420px;
+    padding: 70px 5% 80px;
+    background-color: #176B87;
+    color: #FFFBF1;
+    text-align: center;
+}
+
+.tu-viaje h2 {
+    margin: 0 0 18px;
+    font-size: clamp(25px, 3vw, 38px);
+    font-weight: 400;
+}
+
+.tu-viaje p {
+    margin: 0;
+    font-size: clamp(20px, 2.5vw, 30px);
+}
+
+.boton-contacto {
+    display: inline-block;
+    margin-top: 60px;
+    padding: 10px 38px;
+    border-radius: 28px;
+    background-color: #982453;
+    color: #ffffff;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .encabezado {
+        height: 52px;
+        padding: 0 3%;
+    }
+
+    main {
+        padding-top: 52px;
+    }
+
+    .navegacion ul {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .navegacion a {
+        font-size: clamp(10px, 2.5vw, 15px);
+    }
+
+    .navegacion .boton-viaje {
+        min-width: 76px;
+        padding: 7px 10px;
+    }
+
+    .seccion-destinos {
+        min-height: auto;
+        padding: 35px 5%;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .tarjeta {
+        width: 100%;
+        min-height: 0;
+        padding: 18px;
+        border-radius: 28px;
+    }
+
+    .tarjeta img {
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 1.46 / 1;
+        border-radius: 16px;
+    }
+
+    .tarjeta h2 {
+        margin: 18px 0 28px;
+        font-size: 24px;
+    }
+
+    .boton-mas {
+        width: 65%;
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .tu-viaje {
+        padding: 45px 6%;
+    }
+}
