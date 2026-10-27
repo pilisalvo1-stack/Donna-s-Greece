@@ -68,10 +68,14 @@ body {
     cursor: pointer;
 }
 
-.boton-viaje:hover,
+.boton-viaje:hover{
+    background-color: #edbd3f;
+    color: #176B87;
+}
+
 .boton-contacto:hover,
 .boton-secundario:hover {
-    opacity: 0.85;
+   background-color: #7D1C45;
 }
 
 .menu-viaje {
@@ -164,7 +168,7 @@ main {
 .frase {
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 23px !important;
+    font-size: 23px;
 }
 
 .boton-contacto,

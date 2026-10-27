@@ -63,6 +63,10 @@ body {
     text-decoration: none;
 }
 
+.navegacion .boton-viaje:hover {
+    background-color: #edbd3f;
+}
+
 /* Tarjeta del destino */
 .destino {
     display: flex;
@@ -175,4 +179,9 @@ body {
 .boton-volver:hover {
     background-color: #7D1C45;
     opacity: 0.9;
+}
+
+.boton-mas:hover,
+.boton-contacto:hover {
+    background-color: #7D1C45;
 }

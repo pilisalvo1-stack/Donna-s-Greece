@@ -62,6 +62,10 @@ body {
     text-decoration: none;
 }
 
+.navegacion .boton-viaje:hover {
+    background-color: #edbd3f;
+}
+
 main {
     padding-top: 58px;
 }
